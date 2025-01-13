@@ -1,0 +1,81 @@
+/* Algemene stijl */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFE900;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navigatie */
+  .nav {
+    display: flex;
+    justify-content: center; /* Centreert de hele navigatie horizontaal */
+    align-items: center; /* Centreert de inhoud verticaal */
+    background-color: #ECC232;
+    padding: 10px 0;
+  }
+  
+  .nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Ruimte tussen de items */
+  }
+  
+  .nav ul li {
+    margin: 0;
+  }
+  
+  .nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+  }
+  
+  .nav ul li a:hover {
+    background-color: #F02F34;
+    color: #FFE900;
+    border-radius: 15px;
+  }
+  
+  /* Zoekbalk */
+  .search-form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  /* Introductie */
+  .intro {
+    text-align: center;
+    padding: 20px;
+    color: white;
+  }
+  
+  .intro h1 {
+    font-size: 36px;
+    margin: 10px 0;
+  }
+  
+  .intro p {
+    font-size: 18px;
+    color: white;
+  }
+
+  section{
+    background-color: #242424;
+  }
+
+  img{
+    width: 100%;
+  }
+  

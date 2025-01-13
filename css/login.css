@@ -1,0 +1,93 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFE900;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .fieldsetlog {
+    background-color: white;
+    width: 350px;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  
+  .log {
+    font-weight: bold;
+    font-size: 25px;
+    color: black;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+ 
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .labelloginnaam {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+    margin-left: 135px ;
+  }
+  
+  .inputlognaam {
+    width: 75%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 35px;
+  }
+  
+  .login, .button1 {
+    display: block;
+    background-color: #ECC232;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin: 12px auto;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 80%;
+    cursor: pointer;
+  }
+  
+  .login:hover, .button1:hover {
+    background-color: #F02F34;
+  }
+  
+  
+  .wvergeten {
+    color: #F02F34;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .wvergeten a:hover {
+    text-decoration: none;
+  }
+  
+  .geenaccount {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .geenaccount a {
+    color: #F02F34;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+
+  
