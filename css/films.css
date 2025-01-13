@@ -1,0 +1,90 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #242424;
+    margin: 0;
+    padding: 0;
+    
+    
+  }
+  
+  /* Navigatie */
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3c3c3c;
+    padding: 10px 0;
+    
+    
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 10;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+}
+
+.nav ul li a:hover {
+    background-color: #bebebe;
+    color: #242424;
+}
+
+/* Zoekbalk */
+.search-form {
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    width: 45vw;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Film sectie */
+.movie-details {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    
+    
+}
+.movie {
+    display: flex;
+    gap: 20px;
+    background: #eaeaea;
+    padding: 15px;
+    border-radius: 10px;
+    align-items: center;
+    
+}
+.movie:nth-child(even) {
+    flex-direction: row-reverse;
+    background: #d4d4d4;
+}
+.movie-poster img {
+    width: 200px;
+    border-radius: 5px;
+}
+.movie-info {
+    max-width: 600px;
+}
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #242424;
+    color: white;
+    padding: 10px 0;
+    margin-top: 20px;
+}

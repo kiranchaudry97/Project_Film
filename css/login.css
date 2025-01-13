@@ -1,13 +1,17 @@
 /* General Styles */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #FFE900;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+  background-image: url("../images/tajmahalfront.jpg");
+  background-size: cover; 
+  background-position: center; 
+  font-family: 'Roboto', sans-serif;
+  background-color: #3c3c3c; 
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #ffffff; /
   }
   
   .fieldsetlog {
@@ -50,7 +54,7 @@ body {
   
   .login, .button1 {
     display: block;
-    background-color: #ECC232;
+    background-color: #3c3c3c;
     border: none;
     color: white;
     padding: 10px;
@@ -63,12 +67,12 @@ body {
   }
   
   .login:hover, .button1:hover {
-    background-color: #F02F34;
+    background-color: #242424;
   }
   
   
   .wvergeten {
-    color: #F02F34;
+    color: #242424;
     text-decoration: none;
     text-align: center;
     margin-top: 15px;
@@ -84,7 +88,7 @@ body {
   }
   
   .geenaccount a {
-    color: #F02F34;
+    color: #242424;
     text-decoration: none;
     font-weight: bold;
   }
