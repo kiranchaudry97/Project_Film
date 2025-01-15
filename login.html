@@ -8,33 +8,48 @@
   <title>Login Formulier</title>
 </head>
 <body>
-    
+  <header>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li>
+          <form class="search-form" action="https://www.w3schools.com/action_page.php">
+            <input type="text" placeholder="Search.." class="search-input">
+          </form>
+        </li>
+        <li><a href="Films.html">FILMS</a></li>
+        <li><a href="OverOns.html">OVER ONS</a></li>
+        <li><a href="login.html" class="nav-login">LOG IN</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<fieldset class="fieldsetlog">
-    <form action="https://www.w3schools.com/action_page.php">
+  <main class="main-container">
+    <fieldset class="fieldsetlog">
+      <form action="adminpaneel.html">
         <p class="log">Inloggen</p>
-        
+
         <div class="loginformulier">
-            <div class="form-group">
-                <label class="labelloginnaam" for="lognaam">Loginnaam</label>
-                <input class="inputlognaam" type="text" id="lognaam" name="Lognaam" size="15" maxlength="30">
-            </div>
+          <div class="form-group">
+            <label class="labelloginnaam" for="lognaam">Loginnaam</label>
+            <input class="inputlognaam" type="text" id="lognaam" name="Lognaam" size="15" maxlength="30">
+          </div>
 
-            <div class="form-group">
-                <label class="labelloginnaam" for="wachtwoord">Wachtwoord</label>
-                <input class="inputlognaam" type="password" id="wachtwoord" name="Wachtwoord" size="15" maxlength="30">
-            </div>
+          <div class="form-group">
+            <label class="labelloginnaam" for="wachtwoord">Wachtwoord</label>
+            <input class="inputlognaam" type="password" id="wachtwoord" name="Wachtwoord" size="15" maxlength="30">
+          </div>
 
-            <button type="submit" class="login">Login</button>
+          <button type="submit" class="login">Login</button>
         </div>
 
         <p class="wvergeten"><a href="#wachtwoord">Wachtwoord vergeten?</a></p>
         <p class="geenaccount">
-            <a href="#accountaanmaken" class="accountaanmaken">Nog geen account?</a>
+          <a href="adminpaneel.html#admin" class="accountaanmaken">Nog geen account?</a>
         </p>
         <button type="submit" class="button1" value="registreren">Registreer hier</button>
-    </form>
-</fieldset>
-
+      </form>
+    </fieldset>
+  </main>
 </body>
 </html>

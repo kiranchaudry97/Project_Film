@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adminpaneel - Filmbeheer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+  <header class="admin-header">
+    <h1 id="admin">Filmbeheer</h1>
+    <nav>
+      <ul class="admin-nav">
+        <li><a href="filmoverzicht.html">Filmoverzicht</a></li>
+        <li><a href="films.html">Alle Films</a></li>
+        <li><a href="index.html">Uitloggen</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="admin-panel">
+    <h2>Film toevoegen</h2>
+    <form class="admin-form">
+      <label for="title">Titel:</label>
+      <input type="text" id="title" name="title" placeholder="Voer de filmtitel in" required>
+
+      <label for="description">Beschrijving:</label>
+      <textarea id="description" name="description" rows="5" placeholder="Beschrijf de film..." required></textarea>
+
+      <label for="genres">Genres:</label>
+      <input type="text" id="genres" name="genres" placeholder="Bijvoorbeeld: Actie, Drama" required>
+
+      <label for="release-date">Releasedatum:</label>
+      <input type="date" id="release-date" name="release-date" required>
+
+      <label for="image">Afbeelding uploaden:</label>
+      <input type="file" id="image" name="image" accept="image/*">
+
+      <button type="submit"><a href="filmoverzicht.html#filmoverzicht">Film toevoegen</a></button>
+    </form>
+
+    <section class="related-movies">
+        <h2>Gerelateerde films</h2>
+        <div class="related-movie-cards">
+          <div class="related-movie-card">
+            <img src="images/khoobsurat.jpeg" alt="Film khoobsurat">
+            <h3>Khoobsurat</h3>
+            <p>Genre: Romance</p>
+          </div>
+          <div class="related-movie-card">
+            <img src="images/dangal.jpg" alt="Dangal">
+            <h3>Dangal</h3>
+            <p>Genre: Sport</p>
+          </div>
+          <div class="related-movie-card">
+            <img src="images/like star on earth.jpg" alt="like star on earth">
+            <h3>12th Fail</h3>
+            <p>Genre: Avontuur</p>
+          </div>
+        </div>
+      </section>
+      
+  </main>
+
+  <footer class="admin-footer">
+    <p>&copy; 2025 Filmbeheer Adminpaneel</p>
+  </footer>
+</body>
+</html>

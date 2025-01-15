@@ -3,112 +3,478 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FilmWebsite</title>
+  <title>Film Details</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/films.css">
 </head>
 <body>
   <header>
-      <nav class="nav">
-          <ul>
-              <li><a href="index.html">HOME</a></li>
-              <li><a href="Films.html">FILMS</a></li>
-              <li>
-                  <form class="search-form" action="#">
-                      <input type="text" placeholder="Search.." class="search-input">
-                  </form>
-              </li>
-              <li><a href="OverOns.html">OVER ONS</a></li>
-              <li><a href="Contact.html">CONTACT</a></li>
-              <li><a href="login.html">LOG IN</a></li>
-          </ul>
-      </nav>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="Films.html">FILMS</a></li>
+        <li>
+          <form class="search-formnav" action="#">
+            <input type="text" placeholder="Search.." class="search-inputnav">
+          </form>
+        </li>
+        <li><a href="OverOns.html">OVER ONS</a></li>
+        <li><a href="Contact.html">CONTACT</a></li>
+        <li><a href="login.html">LOG IN</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <div class="movie-details">
-      <div class="movie">
-          <div class="movie-poster">
-              <img src="images/Dunki.jpeg" alt="Poster van Dunki">
+  <main class="movie-details">
+
+    <!-- Khoobsurat -->
+<section class="movie">
+      <div class="movie-poster">
+        <img src="images/khoobsurat.jpeg" alt="Poster van Khoobsurat">
+</div>
+<div class="movie-info">
+        <h1>Khoobsurat</h1>
+        <p><strong>Genre:</strong> Drama, Romantiek</p>
+        <p><strong>Regisseur:</strong> Rhea Kapoor</p>
+        <p><strong>Acteurs:</strong> Sonam Kapoor, Fawad Khan, Kirron Kher</p>
+        <p><strong>Releasedatum:</strong> 19 September 2014</p>
+        <p><strong>Duur:</strong> 130 minuten</p>
+        <p><strong>Gemiddelde beoordeling:</strong> ⭐⭐⭐⭐⭐ (5/5)</p>
+</div>
+
+<section class="movie-video">
+        <h2>Trailer</h2>
+        <div class="video-container">
+          <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/N0LP-Erk9Kk?si=t_YnB-_Jpkff8O_Q" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen>
+          </iframe>
+        </div>
+</section>
+</section>
+    <section class="movie-plot">
+      <h2>Plot</h2>
+      <p>Een romantische fysiotherapeut ontmoet een jonge prins die het tegenovergestelde van haar is. 
+        <br>Deze charmante film verkent de uitdagingen van liefde en aanpassing aan een koninklijke omgeving.</p>
+    </section>
+    <section class="movie-cast">
+      <h2>Acteurs</h2>
+      <div class="cast-container">
+        <div class="actor-card">
+          <img src="images/sonamkapoor.jpeg" alt="Sonam Kapoor">
+          <p>Sonam Kapoor</p>
+        </div>
+        <div class="actor-card">
+          <img src="images/fawadkhan.jpeg" alt="Fawad Khan">
+          <p>Fawad Khan</p>
+        </div>
+        <div class="actor-card">
+          <img src="images/kironkherr.jpeg" alt="Kirron Kher">
+          <p>Kirron Kher</p>
+        </div>
+      </div>
+    </section>
+
+<!-- geralteerde movies -->
+<section class="related-movies">
+    <h2>Gerelateerde films</h2>
+    <div class="related-movie-cards">
+      <div class="related-movie-card">
+        <img src="images/Dunki.jpeg" alt="Dunki">
+        <h3><a href="#dunki">Dunki</a></h3>
+      </div>
+      <div class="related-movie-card">
+        <img src="images/jersey.jpeg" alt="Jersey">
+        <h3><a href="#jersey">Jersey</a></h3>
+      </div>
+      <div class="related-movie-card">
+        <img src="images/like star on earth.jpg" alt="Like Stars on Earth">
+        <h3><a href="#like-stars">Like Stars on Earth</a></h3>
+      </div>
+    </div>
+  </section>
+
+    <!-- Dunki -->
+    <section class="movie">
+      <div class="movie-poster">
+        <img src="images/Dunki.jpeg" alt="Poster van Dunki">
+      </div>
+      <div class="movie-info">
+        <h1>Dunki</h1>
+        <p><strong>Genre:</strong> Actie, Avontuur, Drama</p>
+        <p><strong>Regisseur:</strong> Rajkumar Hirani</p>
+        <p><strong>Acteurs:</strong> Shah Rukh Khan, Taapsee Pannu, Boman Irani</p>
+        <p><strong>Releasedatum:</strong> 25 December 2023</p>
+        <p><strong>Duur:</strong> 161 minuten</p>
+        <p><strong>Gemiddelde beoordeling:</strong> ⭐⭐⭐⭐☆ (4.5/5)</p>
+      </div>
+<!--Video-->
+<section class="movie-video">
+        <h2>Trailer</h2>
+        <div class="video-container">
+            <iframe width="560" height="315"
+             src="https://www.youtube.com/embed/XuIVa_K59QE?si=f3CmRmew4nGx0LQt"
+              title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+              referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen></iframe>
+        </div>
+</section>
+</section>
+
+    <section class="movie-plot">
+      <h2>Plot</h2>
+      <p>"Dunki" volgt het verhaal van een jonge man die vastbesloten is zijn dromen na te jagen, maar vastloopt in een ingewikkeld immigratieproces.
+        <br> De film combineert humor, emotie en de rauwe realiteit van de zogenaamde "donkey flight"<br>-immigratietechniek.</p>
+    </section>
+    <section class="movie-cast">
+      <h2>Acteurs</h2>
+      <div class="cast-container">
+        <div class="actor-card">
+          <img src="images/shah-rukh-khan.jpg" alt="Shah Rukh Khan">
+          <p>Shah Rukh Khan</p>
+        </div>
+        <div class="actor-card">
+          <img src="images/taapsepanu.jpg" alt="Taapsee Pannu">
+          <p>Taapsee Pannu</p>
+        </div>
+        <div class="actor-card">
+          <img src="images/booman-irani.jpg" alt="Boman Irani">
+          <p>Boman Irani</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- geralteerde movies -->
+    <section class="related-movies">
+        <h2>Gerelateerde films</h2>
+        <div class="related-movie-cards">
+          <div class="related-movie-card">
+            <img src="images/Dunki.jpeg" alt="Dunki">
+            <h3><a href="#dunki">Dunki</a></h3>
           </div>
-          <div class="movie-info">
-              <h2>Dunki</h2>
-              <p><strong>Genre:</strong> Actie, Avontuur</p>
-              <p><strong>Regisseur:</strong> Rajkumar Hirani</p>
-              <p><strong>Acteurs:</strong> Shah Rukh Khan, Taapsee Pannu, Boman Irani</p>
-              <p><strong>Releasedatum:</strong> 25 December 2023</p>
-              <p><strong>Duur:</strong> 161 minuten</p>
-              <h2>Plot</h2>
-              <p>Dunki is een 2023 Indiase Hindi komedie-drama gebaseerd op de immigratietechniek "donkey flight".</p>
+          <div class="related-movie-card">
+            <img src="images/jersey.jpeg" alt="Jersey">
+            <h3><a href="#jersey">Jersey</a></h3>
           </div>
+          <div class="related-movie-card">
+            <img src="images/like star on earth.jpg" alt="Like Stars on Earth">
+            <h3><a href="#like-stars">Like Stars on Earth</a></h3>
+          </div>
+        </div>
+      </section>
+  
+
+    <!-- Dangal -->
+<section class="movie">
+      <div class="movie-poster">
+        <img src="images/dangal.jpg" alt="Poster van Dangal">
+      </div>
+      <div class="movie-info">
+        <h1>Dangal</h1>
+        <p><strong>Genre:</strong> Biografie, Sport, Drama</p>
+        <p><strong>Regisseur:</strong> Nitesh Tiwari</p>
+        <p><strong>Acteurs:</strong> Aamir Khan, Sakshi Tanwar, Fatima Sana Shaikh</p>
+        <p><strong>Releasedatum:</strong> 23 December 2016</p>
+        <p><strong>Duur:</strong> 161 minuten</p>
+        <p><strong>Gemiddelde beoordeling:</strong> ⭐⭐⭐⭐⭐ (5/5)</p>
+      </div>
+<!--Video-->
+<section class="movie-video">
+        <h2>Trailer</h2>
+        <div class="video-container">
+            <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/XuIVa_K59QE?si=f3CmRmew4nGx0LQt" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+            allowfullscreen></iframe>
+        </div>
+</section>
+</section>
+
+
+<section class="movie-plot">
+      <h2>Plot</h2>
+      <p>"Dangal" is een inspirerend verhaal over Mahavir Singh Phogat, een worstelaar die zijn dochters traint om het Indiase worstelkampioenschap te winnen.
+        <br> De film viert doorzettingsvermogen, familie en vrouwensport.</p>
+</section>
+<section class="movie-cast">
+      <h2>Acteurs</h2>
+      <div class="cast-container">
+        <div class="actor-card">
+          <img src="images/amirkhan.jpg" alt="Aamir Khan">
+          <p>Aamir Khan</p>
+        </div>
+        <div class="actor-card">
+          <img src="images/Sakshi Tanwar.jpg" alt="Sakshi Tanwar">
+          <p>Sakshi Tanwar</p>
+        </div>
+        <div class="actor-card">
+          <img src="images/Fatima Sana Shaikh.jpg" alt="Fatima Sana Shaikh">
+          <p>Fatima Sana Shaikh</p>
+        </div>
+      </div>
+</section>
+
+    <!-- geralteerde movies -->
+    <section class="related-movies">
+        <h2>Gerelateerde films</h2>
+        <div class="related-movie-cards">
+          <div class="related-movie-card">
+            <img src="images/Dunki.jpeg" alt="Dunki">
+            <h3><a href="#dunki">Dunki</a></h3>
+          </div>
+          <div class="related-movie-card">
+            <img src="images/jersey.jpeg" alt="Jersey">
+            <h3><a href="#jersey">Jersey</a></h3>
+          </div>
+          <div class="related-movie-card">
+            <img src="images/like star on earth.jpg" alt="Like Stars on Earth">
+            <h3><a href="#like-stars">Like Stars on Earth</a></h3>
+          </div>
+        </div>
+      </section>
+  
+
+    <!-- Like Stars on Earth -->
+    <section class="movie">
+      <div class="movie-poster">
+        <img src="images/like star on earth.jpg" alt="Poster van Like Stars on Earth">
+      </div>
+      <div class="movie-info">
+        <h1>Like Stars on Earth</h1>
+        <p><strong>Genre:</strong> Drama, Familie</p>
+        <p><strong>Regisseur:</strong> Aamir Khan</p>
+        <p><strong>Acteurs:</strong> Darsheel Safary, Aamir Khan, Tisca Chopra</p>
+        <p><strong>Releasedatum:</strong> 21 December 2007</p>
+        <p><strong>Duur:</strong> 165 minuten</p>
+        <p><strong>Gemiddelde beoordeling:</strong> ⭐⭐⭐⭐☆ (4.8/5)</p>
       </div>
 
-      <div class="movie">
-          <div class="movie-poster">
-              <img src="images/khoobsurat.jpeg" alt="Poster van Khoobsurat">
-          </div>
-          <div class="movie-info">
-              <h2>Khoobsurat</h2>
-              <p><strong>Genre:</strong> Drama, Romantiek</p>
-              <p><strong>Regisseur:</strong> Rhea Kapoor</p>
-              <p><strong>Acteurs:</strong> Sonam Kapoor, Fawad Khan, Kirron Kher</p>
-              <p><strong>Releasedatum:</strong> 19 September 2014</p>
-              <p><strong>Duur:</strong> 130 minuten</p>
-              <h2>Plot</h2>
-              <p>Een romantische fysiotherapeut ontmoet een jonge prins die het tegenovergestelde van haar is.</p>
-          </div>
-      </div>
+<!--Video-->
+<section class="movie-video">
+    <h2>Trailer</h2>
+    <div class="video-container">
+    <iframe width="560" height="315" 
+        src="https://www.youtube.com/embed/2LEyl7GGU38?si=MlNWDeyWqiOktBAP" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen></iframe>
+    </div>
+</section>
+</section>
 
-      <div class="movie">
-          <div class="movie-poster">
-              <img src="images/3idiots.jpeg" alt="Poster van 3 Idiots">
-          </div>
-          <div class="movie-info">
-              <h2>3 Idiots</h2>
-              <p><strong>Genre:</strong> Komedie, Drama</p>
-              <p><strong>Regisseur:</strong> Rajkumar Hirani</p>
-              <p><strong>Acteurs:</strong> Aamir Khan, Kareena Kapoor, R. Madhavan</p>
-              <p><strong>Releasedatum:</strong> 25 December 2009</p>
-              <p><strong>Duur:</strong> 170 minuten</p>
-              <h2>Plot</h2>
-              <p>Een verhaal over vriendschap en de zoektocht naar succes buiten traditionele regels.</p>
-          </div>
-      </div>
 
-      <div class="movie">
-          <div class="movie-poster">
-              <img src="images/zindagi.jpeg" alt="Poster van Zindagi Na Milegi Dobara">
-          </div>
-          <div class="movie-info">
-              <h2>Zindagi Na Milegi Dobara</h2>
-              <p><strong>Genre:</strong> Avontuur, Drama</p>
-              <p><strong>Regisseur:</strong> Zoya Akhtar</p>
-              <p><strong>Acteurs:</strong> Hrithik Roshan, Farhan Akhtar, Katrina Kaif</p>
-              <p><strong>Releasedatum:</strong> 15 Juli 2011</p>
-              <p><strong>Duur:</strong> 155 minuten</p>
-              <h2>Plot</h2>
-              <p>Drie vrienden beginnen aan een roadtrip die hun levens verandert.</p>
-          </div>
+<section class="movie-plot">
+      <h2>Plot</h2>
+      <p>"Like Stars on Earth" vertelt het ontroerende verhaal van een kind met dyslexie dat worstelt met conventionele onderwijsnormen.
+        <br> Zijn kunstleraar helpt hem om zijn unieke talenten te ontdekken en te bloeien.</p>
+</section>
+<section class="movie-cast">
+      <h2>Acteurs</h2>
+      <div class="cast-container">
+        <div class="actor-card">
+          <img src="images/Darsheel Safary.jpg" alt="Darsheel Safary">
+          <p>Darsheel Safary</p>
+        </div>
+        <div class="actor-card">
+          <img src="images/amirkhan.jpg" alt="Aamir Khan">
+          <p>Aamir Khan</p>
+        </div>
+        <div class="actor-card">
+          <img src="images/Tisca Chopra.jpg" alt="Tisca Chopra">
+          <p>Tisca Chopra</p>
+        </div>
       </div>
+</section>
 
-      <div class="movie">
-          <div class="movie-poster">
-              <img src="images/lagaan.jpeg" alt="Poster van Lagaan">
+    <!-- geralteerde movies -->
+    <section class="related-movies">
+        <h2>Gerelateerde films</h2>
+        <div class="related-movie-cards">
+          <div class="related-movie-card">
+            <img src="images/Dunki.jpeg" alt="Dunki">
+            <h3><a href="#dunki">Dunki</a></h3>
           </div>
-          <div class="movie-info">
-              <h2>Lagaan</h2>
-              <p><strong>Genre:</strong> Historisch, Sport</p>
-              <p><strong>Regisseur:</strong> Ashutosh Gowariker</p>
-              <p><strong>Acteurs:</strong> Aamir Khan, Gracy Singh</p>
-              <p><strong>Releasedatum:</strong> 15 Juni 2001</p>
-              <p><strong>Duur:</strong> 224 minuten</p>
-              <h2>Plot</h2>
-              <p>Een dorp vecht tegen Britse onderdrukking door middel van een cricketwedstrijd.</p>
+          <div class="related-movie-card">
+            <img src="images/jersey.jpeg" alt="Jersey">
+            <h3><a href="#jersey">Jersey</a></h3>
           </div>
+          <div class="related-movie-card">
+            <img src="images/like star on earth.jpg" alt="Like Stars on Earth">
+            <h3><a href="#like-stars">Like Stars on Earth</a></h3>
+          </div>
+        </div>
+      </section>
+  
+    <!-- Jersey -->
+    <section class="movie">
+      <div class="movie-poster">
+        <img src="images/jersey.jpeg" alt="Poster van Jersey">
       </div>
-  </div>
+      <div class="movie-info">
+        <h1>Jersey</h1>
+        <p><strong>Genre:</strong> Sport, Drama</p>
+        <p><strong>Regisseur:</strong> Gowtam Tinnanuri</p>
+        <p><strong>Acteurs:</strong> Shahid Kapoor, Mrunal Thakur, Pankaj Kapur</p>
+        <p><strong>Releasedatum:</strong> 14 April 2022</p>
+        <p><strong>Duur:</strong> 174 minuten</p>
+        <p><strong>Gemiddelde beoordeling:</strong> ⭐⭐⭐⭐☆ (4.5/5)</p>
+      </div>
+ <!--Video-->
+ <section class="movie-video">
+    <h2>Trailer</h2>
+    <div class="video-container">
+      <iframe 
+       width="560" height="315"
+        src="https://www.youtube.com/embed/BT0zd0kmTxM?si=g3ECV-Q5FYjX2XkA" title="YouTube video player"
+         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+    </div>
+</section>
+</section>
+    <section class="movie-plot">
+      <h2>Plot</h2>
+      <p>"Jersey" volgt het verhaal van een voormalige cricketspeler die zijn carrière opnieuw probeert op te bouwen om zijn zoon een cadeau te geven waar hij trots op kan zijn.
+        <br> De film gaat over opoffering, familie en doorzettingsvermogen.</p>
+    </section>
+    <section class="movie-cast">
+      <h2>Acteurs</h2>
+      <div class="cast-container">
+        <div class="actor-card">
+          <img src="images/Shahid Kapoor.jpg" alt="Shahid Kapoor">
+          <p>Shahid Kapoor</p>
+        </div>
+        <div class="actor-card">
+          <img src="images/Mrunal Thakur.jpg" alt="Mrunal Thakur">
+          <p>Mrunal Thakur</p>
+        </div>
+        <div class="actor-card">
+          <img src="images/Pankaj Kapur.jpg" alt="Pankaj Kapur">
+          <p>Pankaj Kapur</p>
+        </div>
+      </div>
+    </section>
+
+   <!-- geralteerde movies -->
+    <section class="related-movies">
+        <h2>Gerelateerde films</h2>
+        <div class="related-movie-cards">
+          <div class="related-movie-card">
+            <img src="images/Dunki.jpeg" alt="Dunki">
+            <h3><a href="#dunki">Dunki</a></h3>
+          </div>
+          <div class="related-movie-card">
+            <img src="images/jersey.jpeg" alt="Jersey">
+            <h3><a href="#jersey">Jersey</a></h3>
+          </div>
+          <div class="related-movie-card">
+            <img src="images/like star on earth.jpg" alt="Like Stars on Earth">
+            <h3><a href="#like-stars">Like Stars on Earth</a></h3>
+          </div>
+        </div>
+      </section>
+
+      <div class="container">
+        <!-- Zoekoptie -->
+        <div class="search-container">
+          <input type="text" class="search-input" placeholder="Zoek een film...">
+        </div>
+      
+        <!-- Film Tabel -->
+        <table class="film-table">
+          <thead>
+            <tr>
+              <th>Titel</th>
+              <th>Genre</th>
+              <th>Regisseur</th>
+              <th>Releasedatum</th>
+              <th>Duur</th>
+              <th>Beoordeling</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Khoobsurat</td>
+              <td>Drama, Romantiek</td>
+              <td>Rhea Kapoor</td>
+              <td>19 September 2014</td>
+              <td>130 minuten</td>
+              <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td>Dunki</td>
+              <td>Actie, Avontuur, Drama</td>
+              <td>Rajkumar Hirani</td>
+              <td>25 December 2023</td>
+              <td>161 minuten</td>
+              <td>⭐⭐⭐⭐☆</td>
+            </tr>
+            <tr>
+              <td>Dangal</td>
+              <td>Biografie, Sport, Drama</td>
+              <td>Nitesh Tiwari</td>
+              <td>23 December 2016</td>
+              <td>161 minuten</td>
+              <td>⭐⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td>Like Stars on Earth</td>
+              <td>Drama, Familie</td>
+              <td>Aamir Khan</td>
+              <td>21 December 2007</td>
+              <td>165 minuten</td>
+              <td>⭐⭐⭐⭐☆</td>
+            </tr>
+            <tr>
+              <td>Jersey</td>
+              <td>Sport, Drama</td>
+              <td>Gowtam Tinnanuri</td>
+              <td>14 April 2022</td>
+              <td>174 minuten</td>
+              <td>⭐⭐⭐⭐☆</td>
+            </tr>
+          </tbody>
+        </table>
+      
+        <!-- Toevoegen Formulier -->
+        <section class="add-film-form">
+          <h2>Voeg een nieuwe film toe</h2>
+          <form>
+            <label for="film-title">Titel:</label>
+            <input type="text" id="film-title" name="film-title" placeholder="Film titel">
+      
+            <label for="film-genre">Genre:</label>
+            <input type="text" id="film-genre" name="film-genre" placeholder="Film genre">
+      
+            <label for="film-director">Regisseur:</label>
+            <input type="text" id="film-director" name="film-director" placeholder="Regisseur">
+      
+            <label for="film-release">Releasedatum:</label>
+            <input type="date" id="film-release" name="film-release">
+      
+            <label for="film-duration">Duur:</label>
+            <input type="text" id="film-duration" name="film-duration" placeholder="Filmduur in minuten">
+      
+            <label for="film-rating">Beoordeling:</label>
+            <input type="text" id="film-rating" name="film-rating" placeholder="Beoordeling (bijv. ⭐⭐⭐⭐⭐)">
+      
+            <label for="film-description">Beschrijving:</label>
+            <textarea id="film-description" name="film-description" rows="4" placeholder="Korte beschrijving van de film"></textarea>
+      
+            <button type="submit">Opslaan</button>
+          </form>
+        </section>
+      </div>
+      
+  </main>
 
   <footer>
-      <p>&copy; 2025 Filmdetail. Alle rechten voorbehouden.</p>
+    <p>&copy; 2025 Indianse Film - Project Static Web - Kiran Chaud-ry<br> Alle rechten voorbehouden.</p>
   </footer>
 </body>
 </html>

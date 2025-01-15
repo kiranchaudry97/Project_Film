@@ -1,0 +1,139 @@
+/* Algemene styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    background-color: #f4f4f9;
+    background-image: url("../images/tajmahal.jpg");
+    color: #333;
+  }
+  
+  .admin-header {
+    background-color: #3c3c3c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    background-image: url("../images/tajmahal3.jpg");
+  }
+  
+  .admin-nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 10px 0 0;
+  }
+  
+  .admin-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  .admin-nav a:hover {
+    background-color: #bebebe;
+    color: black;
+  }
+  
+  .admin-panel {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .admin-panel h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #333;
+  }
+  
+  .admin-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+  }
+  
+  .admin-form input,
+  .admin-form textarea,
+  .admin-form button {
+    width: 95%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .admin-form button {
+    background-color: #3c3c3c;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .admin-form button a{
+    color: white;
+    text-decoration: none;
+  }
+  
+  .admin-form button:hover {
+    background-color: #bebebe;
+  }
+  
+  .admin-footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #3c3c3c;
+    color: white;
+    background-image: url("../images/tajmahal3.jpg");
+  }
+  
+
+  .related-movies {
+    text-align: center;
+    margin: 30px auto;
+  }
+  
+  .related-movies h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .related-movie-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .related-movie-card {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 200px;
+  }
+  
+  .related-movie-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .related-movie-card h3 {
+    font-size: 1.1rem;
+    color: #333;
+  }
+  
+  .related-movie-card p {
+    font-size: 0.9rem;
+    color: #666;
+  }
+   h1, nav ul li{
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.8);
+   }

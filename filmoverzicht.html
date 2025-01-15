@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filmoverzicht</title>
+  <link rel="stylesheet" href="css/filmoverzicht.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Filmoverzicht</h1>
+    <nav>
+        <ul class="admin-nav">
+          <li><a href="filmoverzicht.html">Filmoverzicht</a></li>
+          <li><a href="films.html">Alle Films</a></li>
+          <li><a href="filmformulier.html">Film formulier</a></li>
+          <li><a href="adminpaneel.html">Admin</a></li>
+          <li><a href="index.html">Uitloggen</a></li>
+        </ul>
+      </nav>
+  </header>
+
+ 
+
+  <div class="search-container">
+    <input type="text" class="search-input" placeholder="Zoek een film...">
+  </div>
+
+  <table class="film-table">
+    <thead>
+      <tr>
+        <th>Titel</th>
+        <th>Genre</th>
+        <th>Regisseur</th>
+        <th>Releasedatum</th>
+        <th>Duur</th>
+        <th>Acties</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Dunki</td>
+        <td>Actie, Drama</td>
+        <td>Rajkumar Hirani</td>
+        <td>25-12-2023</td>
+        <td>161 min</td>
+        <td><button class="edit">Bewerken</button> <button class="delete">Verwijderen</button></td>
+      </tr>
+      <tr>
+        <td>Jersey</td>
+        <td>Sport, Drama</td>
+        <td>Gowtam Tinnanuri</td>
+        <td>14-04-2022</td>
+        <td>174 min</td>
+        <td><button class="edit">Bewerken</button> <button class="delete">Verwijderen</button></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <footer>
+    <p>&copy; Project Static Web - 2025 FilmWebsite - Chaud-ry Kiran</p>
+  </footer>
+</body>
+</html>
