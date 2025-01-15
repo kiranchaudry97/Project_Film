@@ -4,7 +4,7 @@ body {
   background-color: #242424;
   margin: 0;
   padding: 0;
-  background-image: url("../images/tajmahalfront.jpg");
+  background-image: url("../images/girltajmahal.jpg ");
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -79,8 +79,20 @@ section {
 }
 
 article p {
-  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+  text-align: center; 
+  margin: 20px auto; 
+  line-height: 1.5; 
+  max-width: 80%; 
+  height: auto;
+  padding: 10px; 
 }
+
+
+
 
 /* Footer */
 footer {
@@ -137,6 +149,18 @@ footer {
   .nav ul li a {
     font-size: 0.85rem;
     padding: 8px;
+  }
+
+  article p {
+    
+    text-align: center; 
+    margin: 10px auto 20px;
+    line-height: 1.4; 
+    max-width: 90%; 
+    padding: 10px; 
+    font-size: 1rem; 
+    position: relative; 
+    
   }
 
   footer {
