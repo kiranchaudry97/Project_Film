@@ -153,6 +153,16 @@ header {
 }
 
 
+/* Footer */
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: #242424;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
 /* mobile versie */
 @media (max-width: 768px) {
   .nav ul {

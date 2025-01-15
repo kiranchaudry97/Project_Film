@@ -1,22 +1,28 @@
-
+/* Algemene stijl */
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #242424;
-    margin: 0;
-    padding: 0;
-    background-image: url("../images/tajmahalfront.jpg");
-    background-size: cover; 
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  color: #ffffff; 
-  }
+  font-family: 'Roboto', sans-serif;
+  background-color: #242424;
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/tajmahalfront.jpg");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #ffffff;
+}
+
+.wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
 
 /* Navigatie */
 .nav {
   display: flex;
-  justify-content: center; 
-  align-items: center; 
+  justify-content: center;
+  align-items: center;
   background-color: #3c3c3c;
   padding: 10px 0;
   background-image: url("../images/tajmahal3.jpg");
@@ -27,7 +33,7 @@ body {
   margin: 0;
   padding: 0;
   display: flex;
-  gap: 20px; 
+  gap: 20px;
 }
 
 .nav ul li {
@@ -48,15 +54,9 @@ body {
   color: #242424;
   border-radius: 10px;
 }
-  
- /* Zoekbalk */
 
-
-
-
-
+/* Zoekbalk */
 .search-form {
-  flex-grow: 1; 
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
@@ -64,40 +64,49 @@ body {
 
 .search-input {
   padding: 10px 15px;
-  width: 100%;
-  max-width: 300px; 
+  width: 45vw;
   border: 1px solid #ccc;
   border-radius: 20px;
   font-size: 1rem;
   transition: all 0.3s ease;
 }
-/* style */
-section{
+
+/* Hoofdinhoud */
+section {
   color: white;
   text-align: center;
   margin-top: 15em;
-  
 }
 
 article p {
-  text-shadow:  0 4px 8px rgba(0, 0, 0, 0.8); ;
-  
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
 }
 
+/* Footer */
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: #242424;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  position: relative;
+  background-image: url("../images/tajmahal3.jpg");
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 
 
+}
 
-/* mobile vesie */
-
+/* Responsieve styling */
 @media screen and (max-width: 768px) {
   .nav {
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     padding: 10px 15px;
   }
 
   .nav ul {
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     gap: 10px;
   }
@@ -105,8 +114,8 @@ article p {
   .nav ul li a {
     font-size: 0.9rem;
     padding: 8px 10px;
-    width: 100%; 
-    text-align: center; 
+    width: 100%;
+    text-align: center;
   }
 
   .search-form {
@@ -115,13 +124,13 @@ article p {
   }
 
   .search-input {
-    width: 80%; 
+    width: 80%;
   }
 }
 
 @media screen and (max-width: 480px) {
   .search-input {
-    width: 90%; 
+    width: 90%;
     font-size: 0.9rem;
   }
 
