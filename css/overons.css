@@ -73,13 +73,21 @@ body {
 
 /* Hoofdinhoud */
 section {
-  color: white;
+  
+  color: white ;
   text-align: center;
   margin-top: 15em;
 }
 
+.titel{
+  font-family: "Lilita One", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
+}
+
 article p {
-  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+  text-shadow: 2px 3px 5px rgba(0,0,0,0.5);
   display: flex; 
   justify-content: center; 
   align-items: center; 
@@ -89,6 +97,16 @@ article p {
   max-width: 80%; 
   height: auto;
   padding: 10px; 
+}
+
+article{
+  background: #858585;
+  box-shadow: 5px 5px #707070;
+    border-radius: 10px;
+    padding: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 150px;
 }
 
 
@@ -109,7 +127,7 @@ footer {
 
 }
 
-/* Responsieve styling */
+/* mobile versie */
 @media screen and (max-width: 768px) {
   .nav {
     flex-direction: column;

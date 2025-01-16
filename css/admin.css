@@ -14,7 +14,14 @@ body {
     text-align: center;
     background-image: url("../images/tajmahal3.jpg");
   }
+
+  h2, h3{
+    font-family: "Lilita One", serif;
+  font-weight: 400;
+  font-style: normal;
+  }
   
+  /* navigatie */
   .admin-nav {
     list-style: none;
     display: flex;
@@ -35,6 +42,9 @@ body {
     color: black;
   }
   
+  /* form*/
+
+
   .admin-panel {
     max-width: 600px;
     margin: 30px auto;
@@ -73,6 +83,7 @@ body {
     border: none;
     font-size: 1rem;
     cursor: pointer;
+    
   }
 
   .admin-form button a{
@@ -91,6 +102,8 @@ body {
     color: white;
     background-image: url("../images/tajmahal3.jpg");
   }
+
+  /* related films */
   
 
   .related-movies {
@@ -138,8 +151,19 @@ body {
     text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.8);
    }
 
+   /*footer*/
+
+   footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #3c3c3c;
+    color: white;
+    background-image: url("../images/tajmahal3.jpg");
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+
    /* mobile versie */
-   
+
    @media (max-width: 768px) {
     .admin-nav {
         flex-direction: column;
@@ -150,7 +174,7 @@ body {
     .admin-panel {
         width: 90%;
         margin: 20px auto;
-        padding: 15px;
+        padding: 25px;
     }
 
     .admin-form input,

@@ -28,6 +28,7 @@ body {
   }
   
   .nav ul li {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
     margin: 0;
   }
   
@@ -87,6 +88,7 @@ body {
   .movie-info h1 {
     font-size: 2rem;
     margin-bottom: 10px;
+    
   }
 
 /* Video sectie */
@@ -103,6 +105,9 @@ body {
   .movie-video h2 {
     font-size: 1.8rem;
     margin-bottom: 20px;
+    font-family: "Lilita One", serif;
+  font-weight: 400;
+  font-style: normal;
   }
   
   .video-container {
@@ -132,6 +137,15 @@ body {
     max-width: 800px;
     text-align: center;
     color: white;
+    
+  }
+
+  .plot,
+  .acteur,
+  .related{
+    font-family: "Lilita One", serif;
+  font-weight: 400;
+  font-style: normal;
   }
   
   .movie-plot h2 {
@@ -243,7 +257,86 @@ body {
     font-size: 1.2rem;
   }
   
- 
+ .review-container {
+  width: 90%;
+  max-width: 600px;
+  background-color: #3c3c3c;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: white;
+margin: auto;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #ffffff;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.review-form label {
+  font-weight: bold;
+}
+
+.review-form input,
+.review-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.review-form button {
+  padding: 10px;
+  background-color: #bebebe;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #242424;
+  cursor: pointer;
+  text-align: center;
+}
+
+.review-form button:hover {
+  background-color: #ffffff;
+  color: #3c3c3c;
+}
+
+.review-list {
+  margin-top: 20px;
+}
+
+.review-list ul {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+}
+
+.review-list ul li {
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.review-list ul li strong {
+  color: black;
+}
+
+.review-list ul li p {
+  margin: 5px 0 0;
+  color: black;
+}
   
   /* Tabel */
 .film-table {
@@ -461,4 +554,26 @@ body {
   footer {
     padding: 15px;
   }
+  .review-container {
+    width: 95%;
+    padding: 15px;
+    margin: auto;
+  }
+
+  .review-form input,
+  .review-form textarea {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .review-form button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .review-list ul li {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
 }
+
