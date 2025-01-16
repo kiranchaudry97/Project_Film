@@ -1,0 +1,197 @@
+/* Algemene styling */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-family: "Lilita One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h3{
+  font-family: "Lilita One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/* Navigatie */
+.nav {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  background-color: #3c3c3c;
+  padding: 10px 0;
+  background-image: url("../images/tajmahal3.jpg");
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px; 
+}
+
+.nav ul li {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  margin: 0;
+}
+
+.nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav ul li a:hover {
+  background-color: #bebebe;
+  color: #242424;
+  border-radius: 10px;
+}
+
+/* Zoekbalk */
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px 15px;
+  width: 45vw;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+/* Contactinformatie */
+.contact-info {
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  text-align: center;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.info-item {
+  flex: 1;
+  min-width: 200px;
+}
+
+.info-item h3 {
+  color: #3c3c3c;
+  margin-bottom: 10px;
+}
+
+.info-item a {
+  text-decoration: none;
+  color: black;
+}
+
+
+/* Contactformulier */
+.contact-form {
+  margin: 30px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #3c3c3c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.contact-form button:hover {
+  background-color: #bebebe;
+}
+
+/* Footer */
+footer {
+  background-color: #3c3c3c;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  background-image: url("../images/tajmahal3.jpg");
+}
+
+/* Media Queries voor mobiel */
+@media (max-width: 768px) {
+  .nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-input {
+    width: 80%;
+  }
+
+  .info-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .contact-info, .contact-form {
+    padding: 15px;
+    margin: 15px auto;
+    max-width: 95%;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9rem;
+  }
+
+  .contact-form button {
+    font-size: 0.9rem;
+  }
+}

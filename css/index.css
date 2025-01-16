@@ -1,0 +1,251 @@
+/* Algemene stijl */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #242424;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigatie */
+.nav {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  background-color: #3c3c3c;
+  padding: 10px 0;
+  background-image: url("../images/tajmahal3.jpg");
+}
+
+.nav ul {
+  
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px; 
+}
+
+.nav ul li {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  margin: 0;
+}
+
+.nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav ul li a:hover {
+  background-color: #bebebe;
+  color: #242424;
+  border-radius: 10px;
+}
+
+/* Zoekbalk */
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px 15px;
+  width: 45vw;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+/* Introductie */
+.filmgrid {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  text-align: center;
+}
+
+.filmgrid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.filmgrid .intro {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  z-index: 2;
+}
+
+.filmgrid .intro h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  font-family: "Lilita One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.filmgrid .intro p {
+  font-size: 1.2rem;
+}
+
+section {
+  background-color: #242424;
+}
+
+img {
+  width: 100%;
+  height: 25%;
+}
+
+main {
+  padding: 20px;
+}
+
+.filmintro {
+  border-radius: 55px;
+}
+
+.subtitle {
+  background-color: #242424;
+  color: white;
+  margin-left: 100px;
+  margin-right: 100px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-family: "Lilita One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Film card */
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.film-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.film-card:hover {
+  transform: scale(1.05);
+}
+
+.film-card img {
+  width: 100%;
+  height: 300px; 
+  object-fit: cover; 
+  border-radius: 10px; 
+}
+
+.film-content {
+  padding: 15px;
+  text-align: center;
+}
+
+.film-title {
+  font-size: 1.5rem;
+  margin: 0 0 10px;
+  font-family: "Lilita One", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.film-rating {
+  color: #f39c12;
+  margin-bottom: 10px;
+}
+
+.film-description {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.film-reviews {
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 15px;
+}
+
+.more-info {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: #6b6b6b;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.more-info:hover {
+  background-color: #bebebe;
+}
+
+.dangal img {
+  width: 100%;
+  height: 65%;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #3c3c3c;
+  color: white;
+  background-image: url("../images/tajmahal3.jpg");
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Mobiele versie */
+@media (max-width: 768px) {
+  .nav ul {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .search-input {
+      width: 80vw;
+  }
+
+  .filmgrid {
+      height: 300px;
+  }
+
+  .filmgrid .intro h1 {
+      font-size: 1.8rem;
+  }
+
+  .filmgrid .intro p {
+      font-size: 1rem;
+  }
+
+  .container {
+      grid-template-columns: repeat(1, 1fr);
+      padding: 10px;
+  }
+
+  .subtitle {
+      margin-left: 20px;
+      margin-right: 20px;
+  }
+}
