@@ -1,0 +1,592 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #242424;
+    color: white;
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/tajmahal3.jpg");
+    background-size: cover; 
+    background-position: center;
+  }
+  
+  /* nav */
+  .nav {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #3c3c3c;
+    padding: 10px 0;
+   
+  }
+  
+  .nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; 
+  }
+  
+  .nav ul li {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin: 0;
+  }
+  
+  .nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+    text-decoration: none;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .nav ul li a:hover {
+    background-color: #bebebe;
+    color: #242424;
+    border-radius: 10px;
+  }
+  
+   /* Zoekbalk */
+   .search-formnav {
+   display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+  
+  
+  .search-inputnav {
+    padding: 10px 15px;
+    width: 45vw;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+  }
+  
+  
+
+
+
+  
+  /* Filminformatie */
+  .movie {
+    display: flex;
+    gap: 20px;
+    background: #eaeaea;
+    padding: 20px;
+    border-radius: 10px;
+    align-items: center;
+    color: #242424;
+  }
+  
+  .movie-poster img {
+    width: 250px;
+    border-radius: 10px;
+  }
+  
+  .movie-info h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    
+  }
+
+/* Video sectie */
+.movie-video {
+    text-align: center;
+    margin: 30px auto;
+    padding: 20px;
+    background: #3c3c3c;
+    border-radius: 10px;
+    max-width: 800px;
+    color: white;
+  }
+  
+  .movie-video h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-family: "Lilita One", serif;
+  font-weight: 400;
+  font-style: normal;
+  }
+  
+  .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .video-container iframe {
+    border-radius: 10px;
+    border: 2px solid white;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9; 
+    width: 100%; 
+    max-width: 800px; 
+  }
+  
+
+  
+  /* Plot */
+  .movie-plot {
+    margin: 20px auto;
+    padding: 20px;
+    background: #3c3c3c;
+    border-radius: 10px;
+    max-width: 800px;
+    text-align: center;
+    color: white;
+    
+  }
+
+  .plot,
+  .acteur,
+  .related{
+    font-family: "Lilita One", serif;
+  font-weight: 400;
+  font-style: normal;
+  }
+  
+  .movie-plot h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .movie-plot p {
+    font-size: 1.2rem;
+  }
+  
+  /* Gerelateerde films */
+  .related-movies {
+    margin: 30px auto;
+    text-align: center;
+  }
+  
+  .related-movie-cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .related-movie-card {
+    background: #eaeaea;
+    color: #242424;
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    width: 200px;
+    transition: transform 0.3s;
+  }
+  
+  .related-movie-card img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .related-movie-card h3 a {
+    color: #242424;
+    text-decoration: none;
+  }
+  
+  .related-movie-card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Acteurs */
+  .movie-cast {
+    text-align: center;
+    margin: 30px auto;
+  }
+  
+  .movie-cast h2 {
+    color: white;
+    font-weight: bold;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.8);
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  
+  .cast-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .actor-card {
+    text-align: center;
+  }
+  
+  .actor-card img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff;
+  }
+  
+  .actor-card p {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: white;
+    text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Reviews sectie */
+  .movie-reviews {
+    margin: 30px auto;
+    padding: 20px;
+    background: #3c3c3c;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    
+  }
+  
+  .movie-reviews h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .movie-reviews p {
+    font-size: 1.2rem;
+  }
+  
+ .review-container {
+  width: 90%;
+  max-width: 600px;
+  background-color: #3c3c3c;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: white;
+margin: auto;
+}
+
+h1 {
+  
+  color: black;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h2{
+  text-align: center;
+  color: white;
+  
+}
+
+.rvw{
+  text-align: center;
+  color: white;
+  
+
+}
+
+.review-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.review-form label {
+  font-weight: bold;
+}
+
+.review-form input,
+.review-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  font-size: 1rem;
+}
+
+.review-form button {
+  padding: 10px;
+  background-color: #bebebe;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #242424;
+  cursor: pointer;
+  text-align: center;
+}
+
+.review-form button:hover {
+  background-color: #ffffff;
+  color: #3c3c3c;
+}
+
+.review-list {
+  margin-top: 20px;
+}
+
+.review-list ul {
+  text-align: center;
+  list-style: none;
+  padding: 0;
+}
+
+.review-list ul li {
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.review-list ul li strong {
+  color: black;
+}
+
+.review-list ul li p {
+  margin: 5px 0 0;
+  color: black;
+}
+  
+  /* Tabel */
+.film-table {
+  width: 80%;
+  margin: 30px auto;
+  border-collapse: collapse;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.film-table th,
+.film-table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.film-table th {
+  background-color: #3c3c3c;
+  color: #ffffff;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.film-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.film-table tr:hover {
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.film-table td {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Zoekbalk */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px 15px;
+  width: 50%;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.search-input:focus {
+  border-color: #242424;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Formulier  */
+.add-film-form {
+  width: 90%; 
+  max-width: 600px; 
+  margin: 30px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.add-film-form h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #333;
+  text-align: center;
+}
+
+.add-film-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.add-film-form input,
+.add-film-form textarea {
+  width: 100%;
+  padding: 4px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.add-film-form input:focus,
+.add-film-form textarea:focus {
+  border-color: #242424;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.add-film-form button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #242424;
+  color: #ffffff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-film-form button:hover {
+  background-color: #3c3c3c;
+}
+
+ /* Footer */
+ footer {
+  background-color: #242424;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Mobiele */
+@media (max-width: 768px) {
+
+  /* Body */
+  body {
+    background-position: top;
+  }
+
+  /* Navigatie */
+  .nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .search-formnav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-inputnav {
+    width: 80%;
+  }
+
+  /* Film informatie */
+  .movie {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .movie-poster img {
+    width: 100%;
+  }
+
+  .movie-info h1 {
+    font-size: 1.5rem;
+  }
+
+  /* Video sectie */
+  .movie-video {
+    padding: 10px;
+  }
+
+  /* Plot */
+  .movie-plot {
+    padding: 10px;
+  }
+
+  /* Gerelateerde films */
+  .related-movie-cards {
+    gap: 10px;
+  }
+
+  .related-movie-card {
+    width: 100%;
+  }
+
+  /* Acteurs */
+  .cast-container {
+    gap: 10px;
+  }
+
+  .actor-card img {
+    width: 100px;
+    height: 100px;
+  }
+
+  /* Reviews sectie */
+  .movie-reviews {
+    padding: 10px;
+  }
+
+  /* Tabel */
+  .film-table {
+    width: 100%;
+  }
+
+  /* Formulier */
+  .add-film-form {
+    padding: 10px;
+  }
+
+  /* Footer */
+  footer {
+    padding: 15px;
+  }
+  .review-container {
+    width: 95%;
+    padding: 15px;
+    margin: auto;
+  }
+
+  .review-form input,
+  .review-form textarea {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .review-form button {
+    font-size: 0.9rem;
+    padding: 8px;
+  }
+
+  .review-list ul li {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
+}
+

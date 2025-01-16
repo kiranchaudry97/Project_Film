@@ -1,0 +1,181 @@
+/* algemeen stijl */
+body {
+  background-image: url("../images/tajmahalfront.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  color: #ffffff;
+}
+
+header {
+  width: 100%;
+}
+/* navigatie */
+.nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3c3c3c;
+  padding: 10px 0;
+}
+
+.nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.nav ul li {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  margin: 0;
+}
+
+.nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px 15px;
+  text-decoration: none;
+}
+
+.nav ul li a:hover {
+  background-color: #bebebe;
+  color: #242424;
+  border-radius: 10px;
+}
+
+/* Zoekbalk */
+.search-form {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  padding: 10px 15px;
+  width: 45vw;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+/* Main  */
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  flex-grow: 1;
+}
+
+/* login formulier */
+
+
+.fieldsetlog {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 350px;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.log {
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.labelloginnaam {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.inputlognaam {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.login, .button1 {
+  background-color: #3c3c3c;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin: 12px auto;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.login:hover, .button1:hover {
+  background-color: #242424;
+}
+
+.wvergeten {
+  color: #242424;
+  text-align: center;
+  margin-top: 15px;
+  text-decoration: underline;
+}
+
+.geenaccount {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.geenaccount a {
+  color: #242424;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/* Footer */
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: #242424;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* mobile versie */
+@media (max-width: 768px) {
+  .nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .search-input {
+    width: 90%;
+  }
+
+  .fieldsetlog {
+    margin-top: 0;
+  }
+}
